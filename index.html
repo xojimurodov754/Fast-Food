@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fas fa-hamburger"></i></div>
+                    <div class="logo-text">Fast Food UZ</div>
+                </div>
+                <div class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#menu" class="nav-link">Menyu</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">Biz haqimizda</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Aloqa</a></li>
+                        <li class="nav-item"><a href="./news.html" class="nav-link">Yangiliklar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Mazzali va Tez Tayyorlanadigan Taomlar</h1>
+                <p>Bizning restoranimizda eng mazzali va sifatli fast foodlarni tatib ko'ring</p>
+                <a href="#menu" class="btn">Buyurtma berish</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="menu" class="section">
+        <div class="container">
+            <div class="section-title">Menyu</div>
+            <div class="menu-items">
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1551782450-a2132b4ba21d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80" alt="Gamburger" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">Gamburger</div>
+                        <div class="menu-item-price">25 000 so'm</div>
+                        <div class="menu-item-desc">Qo'y go'shti, yangi sabzavotlar va maxsus sousli klassik gamburger</div>
+                        <button class="order-btn " onclick="requestOrder()">Buyurtma berish</button>
+                    </div>
+                </div>
+                
+                
+                <div class="menu-item">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80" alt="Pitsa" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">Pitsa</div>
+                        <div class="menu-item-price">65 000 so'm</div>
+                        <div class="menu-item-desc">Qo'ziqorin, qazi, pishloq va pomidor sousi bilan italiyancha pitsa</div>
+                        <button class="order-btn" onclick="requestOrder()">Buyurtma berish</button>
+                    </div>
+                </div>
+                
+                
+                <div class="menu-item">
+                    <img src="https://www.restoran-shafran.uz/image/cache/catalog/product/lavash-v-tandire-1-560x373.jpg" alt="Lavash" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">Lavash</div>
+                        <div class="menu-item-price">28 000 so'm</div>
+                        <div class="menu-item-desc">Tovuq go'shti, yangi sabzavotlar va sarimsoq sousi bilan lavash</div>
+                        <button class="order-btn" onclick="requestOrder()">Buyurtma berish</button>
+                    </div>
+                </div>
+                
+                
+                <div class="menu-item">
+                    <img src="https://eco-buffet.com/wp-content/uploads/2024/04/kartofel-fry.jpg" alt="Fri" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">Kar  toshka Fri</div>
+                        <div class="menu-item-price">15 000 so'm</div>
+                        <div class="menu-item-desc">Xususiy usulda  pishirilgan judayam shirin kumush  rangli  kartoshka fri  </div>
+                        <button class="order-btn" onclick="requestOrder()">Buyurtma berish</button>
+                    </div>
+                </div>
+                
+                
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_ZDeEJ88tmoZBSREdNh6JDWtLGKaEiR8ozg&s" alt="Doner" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">Doner</div>
+                        <div class="menu-item-price">30 000 so'm</div>
+                        <div class="menu-item-desc">Tovuq yoki mol go'shti, sabzavotlar va maxsus sousli doner</div>
+                        <button class="order-btn" onclick="requestOrder()">Buyurtma berish</button>
+                    </div>
+                </div>
+                
+                
+                <div class="menu-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkOmsavCb_tRCgZYHUCd6tXS5JfHMqapLJ4A&s" alt="Ichimliklar" class="menu-item-img">
+                    <div class="menu-item-content">
+                        <div class="menu-item-title">Ichimliklar</div>
+                        <div class="menu-item-price">12 000 so'm</div>
+                        <div class="menu-item-desc">Coca-Cola, Fanta, Sprite, Pepsi yoki tabiiy sharbatlar</div>
+                        <button class="order-btn" onclick="requestOrder()">Buyurtma berish</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    
+    <div id="about" class="section">
+        <div class="container">
+            <div class="section-title">Biz haqimizda</div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Biz 2010-yildan beri xizmat ko'rsatayotgan, O'zbekistondagi eng yirik tez ovqatlar restorani zanjirimiz. Bizning maqsadimiz - mijozlarimizga eng sifatli, mazzali va tez xizmat ko'rsatish.</p>
+                    <p>Bizning barcha mahsulotlarimiz yuqori sifatli mahsulotlardan tayyorlanadi va har kuni yangi xamir va ziravorlar ishlatiladi. Bizning oshpazlarimiz xalqaro tajribaga ega bo'lib, har bir taomni maxsus g'amxo'rlik bilan tayyorlaydilar.</p>
+                    <p>Bizning restoranlarimizda yuqori standartlarga ega toza va qulay muhitda xizmat ko'rsatamiz. Bizning jamoamiz doimo mijozlarimizga eng yaxshi xizmat ko'rsatishga intiladi.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80" alt="Restoran ichki ko'rinishi">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="contact" class="section">
+        <div class="container">
+            <div class="section-title">Aloqa</div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Biz bilan bog'laning</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-text">Toshkent shahri</div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                            <div class="contact-text">+998 99 095 30 18</div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-text">fastfooduz@gmail.com</div>
+                        </li>
+                        <li>
+                            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-text">Ish vaqti: 9:00 - 23:00, dam olish kunlarsiz</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50263738964!2d69.139282778125!3d41.28251254514739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b534175ed31%3A0x52a8f9d9414a2ad8!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1633518252684!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Manzil</h3>
+                    <p>Amir Temur ko'chasi 108</p>
+                    <p>Toshkent, O'zbekiston</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Biz bilan bog'laning</h3>
+                    <p>Tel: +998 99 095 30 18</p>
+                    <p>Email: fastfooduz@gmail.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Bizni kuzatib boring</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025  FastFoodUz. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
